@@ -66,6 +66,26 @@ class MainViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+        
+        let getCatalog = requestFactory.getAllCatalog()
+        getCatalog.getAllCatalog(page: 1, id: 1) { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        let getProduct = requestFactory.getProduct()
+        getProduct.getProduct(productId: 123) { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     // MARK: - Navigation
