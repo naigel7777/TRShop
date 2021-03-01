@@ -26,6 +26,11 @@
 		850B0CB425D86585004F1092 /* RegistrationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B0CB325D86585004F1092 /* RegistrationInfo.swift */; };
 		850B0CB925D86603004F1092 /* ChangeRegitationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B0CB825D86603004F1092 /* ChangeRegitationInfo.swift */; };
 		850B0CBE25D86B16004F1092 /* RegistrationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B0CBD25D86B16004F1092 /* RegistrationData.swift */; };
+		858CCDF625ECE0C200B34FD1 /* CommentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CCDF525ECE0C200B34FD1 /* CommentsFactory.swift */; };
+		858CCDFE25ECE28900B34FD1 /* CommentResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CCDFD25ECE28900B34FD1 /* CommentResponseModel.swift */; };
+		858CCE0325ECE2E300B34FD1 /* CommentApproveResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CCE0225ECE2E300B34FD1 /* CommentApproveResponseModel.swift */; };
+		858CCE0825ECE2FB00B34FD1 /* CommentDeleteResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CCE0725ECE2FB00B34FD1 /* CommentDeleteResponseModel.swift */; };
+		858CCE0E25ECEC8500B34FD1 /* CommentsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858CCE0D25ECEC8500B34FD1 /* CommentsFactoryTests.swift */; };
 		85994D9A25DD0DFB00FAD394 /* LogOutRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85994D9925DD0DFB00FAD394 /* LogOutRequestTest.swift */; };
 		85994DA225DD0E2600FAD394 /* AuthRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85994DA125DD0E2600FAD394 /* AuthRequestTest.swift */; };
 		85994DA725DD0EA200FAD394 /* RegistrationRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85994DA625DD0EA200FAD394 /* RegistrationRequestTest.swift */; };
@@ -83,6 +88,11 @@
 		850B0CB325D86585004F1092 /* RegistrationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInfo.swift; sourceTree = "<group>"; };
 		850B0CB825D86603004F1092 /* ChangeRegitationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRegitationInfo.swift; sourceTree = "<group>"; };
 		850B0CBD25D86B16004F1092 /* RegistrationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationData.swift; sourceTree = "<group>"; };
+		858CCDF525ECE0C200B34FD1 /* CommentsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsFactory.swift; sourceTree = "<group>"; };
+		858CCDFD25ECE28900B34FD1 /* CommentResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponseModel.swift; sourceTree = "<group>"; };
+		858CCE0225ECE2E300B34FD1 /* CommentApproveResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentApproveResponseModel.swift; sourceTree = "<group>"; };
+		858CCE0725ECE2FB00B34FD1 /* CommentDeleteResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDeleteResponseModel.swift; sourceTree = "<group>"; };
+		858CCE0D25ECEC8500B34FD1 /* CommentsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsFactoryTests.swift; sourceTree = "<group>"; };
 		85994D9925DD0DFB00FAD394 /* LogOutRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutRequestTest.swift; sourceTree = "<group>"; };
 		85994DA125DD0E2600FAD394 /* AuthRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequestTest.swift; sourceTree = "<group>"; };
 		85994DA625DD0EA200FAD394 /* RegistrationRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRequestTest.swift; sourceTree = "<group>"; };
@@ -179,6 +189,7 @@
 		850B0C7225D833E3004F1092 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				858CCDF425ECE0A200B34FD1 /* Comment */,
 				85994DBA25DE5DD200FAD394 /* Catalog */,
 				85994DB625DD61E800FAD394 /* Registration */,
 				85994DB525DD61D300FAD394 /* Auth */,
@@ -193,6 +204,54 @@
 				850B0C8925D836EA004F1092 /* MainViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		858CCDF125ECE04700B34FD1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				850B0C6325D8335E004F1092 /* LoginResult.swift */,
+				850B0C6825D8336B004F1092 /* User.swift */,
+				850B0C9F25D83C69004F1092 /* LogOut.swift */,
+				850B0CB325D86585004F1092 /* RegistrationInfo.swift */,
+				850B0CBD25D86B16004F1092 /* RegistrationData.swift */,
+				850B0CB825D86603004F1092 /* ChangeRegitationInfo.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		858CCDF225ECE06D00B34FD1 /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				85994DC525DE5F9D00FAD394 /* ProductModel.swift */,
+				85994DC025DE5EAC00FAD394 /* CatalogModel.swift */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		858CCDF325ECE09600B34FD1 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				858CCDFD25ECE28900B34FD1 /* CommentResponseModel.swift */,
+				858CCE0225ECE2E300B34FD1 /* CommentApproveResponseModel.swift */,
+				858CCE0725ECE2FB00B34FD1 /* CommentDeleteResponseModel.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		858CCDF425ECE0A200B34FD1 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				858CCDF525ECE0C200B34FD1 /* CommentsFactory.swift */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		858CCE0C25ECE94400B34FD1 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				858CCE0D25ECEC8500B34FD1 /* CommentsFactoryTests.swift */,
+			);
+			path = Comments;
 			sourceTree = "<group>";
 		};
 		85994DB525DD61D300FAD394 /* Auth */ = {
@@ -284,6 +343,7 @@
 		85E4F68825D2990F0002F051 /* TRShopTests */ = {
 			isa = PBXGroup;
 			children = (
+				858CCE0C25ECE94400B34FD1 /* Comments */,
 				85994DCC25DE667100FAD394 /* Catalog */,
 				85994DCB25DE665400FAD394 /* Registration */,
 				85994DCA25DE663F00FAD394 /* LogInOut */,
@@ -327,14 +387,9 @@
 		85E4F6A725D2AC320002F051 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				850B0C6325D8335E004F1092 /* LoginResult.swift */,
-				850B0C6825D8336B004F1092 /* User.swift */,
-				850B0C9F25D83C69004F1092 /* LogOut.swift */,
-				850B0CB325D86585004F1092 /* RegistrationInfo.swift */,
-				850B0CB825D86603004F1092 /* ChangeRegitationInfo.swift */,
-				850B0CBD25D86B16004F1092 /* RegistrationData.swift */,
-				85994DC025DE5EAC00FAD394 /* CatalogModel.swift */,
-				85994DC525DE5F9D00FAD394 /* ProductModel.swift */,
+				858CCDF325ECE09600B34FD1 /* Comment */,
+				858CCDF225ECE06D00B34FD1 /* Catalogue */,
+				858CCDF125ECE04700B34FD1 /* Auth */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -616,6 +671,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858CCDFE25ECE28900B34FD1 /* CommentResponseModel.swift in Sources */,
 				850B0C7925D834AA004F1092 /* RequestFactory.swift in Sources */,
 				85E4F67325D2990C0002F051 /* AppDelegate.swift in Sources */,
 				850B0CAA25D84272004F1092 /* LogOutRequestFactory.swift in Sources */,
@@ -625,6 +681,7 @@
 				850B0C8A25D836EA004F1092 /* MainViewController.swift in Sources */,
 				85994DC625DE5F9D00FAD394 /* ProductModel.swift in Sources */,
 				850B0CB425D86585004F1092 /* RegistrationInfo.swift in Sources */,
+				858CCE0325ECE2E300B34FD1 /* CommentApproveResponseModel.swift in Sources */,
 				850B0C5A25D831FC004F1092 /* DataRequest.swift in Sources */,
 				850B0CAF25D86533004F1092 /* RegistrationFactory.swift in Sources */,
 				850B0C5F25D832DF004F1092 /* RequestRouter.swift in Sources */,
@@ -632,8 +689,10 @@
 				850B0CA025D83C69004F1092 /* LogOut.swift in Sources */,
 				850B0C7425D833F2004F1092 /* Auth.swift in Sources */,
 				850B0CB925D86603004F1092 /* ChangeRegitationInfo.swift in Sources */,
+				858CCE0825ECE2FB00B34FD1 /* CommentDeleteResponseModel.swift in Sources */,
 				850B0C6E25D833B9004F1092 /* AuthRequestFactory.swift in Sources */,
 				85E4F67525D2990C0002F051 /* SceneDelegate.swift in Sources */,
+				858CCDF625ECE0C200B34FD1 /* CommentsFactory.swift in Sources */,
 				850B0C4925D82E8B004F1092 /* AbsErrorParser.swift in Sources */,
 				85994DC125DE5EAC00FAD394 /* CatalogModel.swift in Sources */,
 				85994DBC25DE5E0500FAD394 /* CatalogProductsFactory.swift in Sources */,
@@ -653,6 +712,7 @@
 				85994DB125DD108100FAD394 /* RequestFactoryTest.swift in Sources */,
 				85994DAC25DD0EBF00FAD394 /* ChangeRegisterInfoRequestTest.swift in Sources */,
 				85994DD625DE68E600FAD394 /* ProductFromCatalogTest.swift in Sources */,
+				858CCE0E25ECEC8500B34FD1 /* CommentsFactoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

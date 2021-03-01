@@ -58,4 +58,12 @@ class RequestFactory {
                                , queue: sessionQueue, baseURL: baseURL)
     }
     
+    func editingReview() -> CommentsFactory {
+        let errorParser = makeErrorParser()
+        return CommentEditor(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue, baseURL: baseURL)
+    }
+    
+    
+    
+    
 }
