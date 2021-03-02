@@ -115,6 +115,36 @@ class MainViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+        
+        let addToBasket = requestFactory.basketEditor()
+        addToBasket.addToBasket(productID: 123, quantity: 1) { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        let deleteFromBasket = requestFactory.basketEditor()
+        deleteFromBasket.deleteFromBasket(productID: 123) { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        let getAllBasket = requestFactory.basketEditor()
+        getAllBasket.getBasket(userID: user.id) { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     // MARK: - Navigation

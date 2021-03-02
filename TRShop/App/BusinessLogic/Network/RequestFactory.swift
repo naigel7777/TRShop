@@ -63,6 +63,10 @@ class RequestFactory {
         return CommentEditor(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue, baseURL: baseURL)
     }
     
+    func basketEditor() -> BasketFactory {
+        let errorParser = makeErrorParser()
+        return BasketEditor(errorParser: errorParser, sessionManager: commonSession, queue: sessionQueue, baseURL: baseURL)
+    }
     
     
     
