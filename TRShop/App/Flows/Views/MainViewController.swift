@@ -86,6 +86,35 @@ class MainViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
+        
+        let newComment = requestFactory.editingReview()
+        newComment.addRewiew(idUser: user.id, text: "Test Comment") { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        
+        let applyComment = requestFactory.editingReview()
+        applyComment.approveReview(commentId: 123) { (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
+        let delComment = requestFactory.editingReview()
+        delComment.removeReview(commentId: 123){ (response) in
+            switch response.result {
+            case .success(let res):
+                print(res)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
     
     // MARK: - Navigation
