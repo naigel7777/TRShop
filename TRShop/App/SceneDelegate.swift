@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window.backgroundColor = UIColor.white
             
             let nav = UINavigationController()
-            let mainView = MainViewController()
+            let mainView = LoginViewController()
             nav.viewControllers = [mainView]
             window.rootViewController = nav
             self.window = window
