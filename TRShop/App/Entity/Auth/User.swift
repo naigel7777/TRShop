@@ -8,6 +8,9 @@
 import Foundation
 
 struct User: Codable {
+    static var zero: User {
+        User(id: 0, login: "", name: "", lastname: "")
+    }
     let id: Int
     let login: String
     let name: String

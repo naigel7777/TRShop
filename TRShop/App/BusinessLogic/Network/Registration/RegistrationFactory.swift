@@ -58,7 +58,7 @@ extension RegistrationInfo {
                 "username": userName,
                 "password": password,
                 "email": email,
-                    "gender": gender,
+                "gender": gender,
                 "credit_card": creditCard,
                 "bio": bio
             ]

@@ -8,7 +8,7 @@ target 'TRShop' do
   # Pods for TRShop
 
 pod 'Alamofire', '~> 5.2'
-
+pod 'PinLayout'
 
 
   target 'TRShopTests' do

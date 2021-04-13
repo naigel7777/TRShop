@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (5.4.1)
+  - PinLayout (1.9.3)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
+  - PinLayout
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - PinLayout
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  PinLayout: 4d8733121f8687edcc8f00c19bf1379d12808767
 
-PODFILE CHECKSUM: ce75e67f1fc5f61540f208654abd9eda3c795d10
+PODFILE CHECKSUM: 3c73890eeee8c50923254c34b21f2ef54c3bb1df
 
 COCOAPODS: 1.8.4
